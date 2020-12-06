@@ -49,7 +49,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  backface-visibility: hidden; }
   .hero__image {
     animation: moveInLeft 1.5s ease-out; }
     .hero__image img {
@@ -60,12 +61,11 @@ body {
       margin-right: 1rem; }
   .hero__textbox {
     animation: moveInRight 1.5s ease-out;
-    flex-basis: 40%; }
+    flex-basis: 45%; }
     .hero__textbox p {
       font-size: 1.76rem;
       font-weight: 400;
-      color: white;
-      text-align: justify; }
+      color: white; }
   .hero__links {
     padding-top: 0.5rem; }
     .hero__links a {
@@ -86,12 +86,11 @@ body {
 */
 @media only screen and (max-width: 120rem) {
   .hero__textbox {
-    flex-basis: 0%;
-    flex-grow: 0.75; } }
+    flex-basis: 0;
+    flex-grow: 0.70; } }
 
 @media only screen and (max-width: 80rem) {
   .hero__textbox {
-    flex-basis: 0%;
     flex-grow: 1; } }
 
 @media only screen and (max-width: 50rem) {
@@ -108,8 +107,12 @@ body {
       text-align: center; }
       .hero__textbox p {
         text-align: center; }
-    .hero__links a i {
-      margin-top: 2rem; } }
+    .hero__links {
+      margin: 0 auto; }
+      .hero__links a i {
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem; } }
 
 #particles-js {
   position: absolute;

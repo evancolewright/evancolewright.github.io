@@ -33,6 +33,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  backface-visibility: hidden;
 
   &__image {
     animation: moveInLeft 1.5s ease-out;
@@ -47,12 +48,11 @@ body {
 
   &__textbox {
     animation: moveInRight 1.5s ease-out;
-    flex-basis: 40%;
+    flex-basis: 45%;
     p {
       font-size: 1.76rem;
       font-weight: 400;
       color: white;
-      text-align: justify;
     }
   }
   &__links {
@@ -84,8 +84,8 @@ body {
 @media only screen and (max-width: 120rem) {
     .hero {
         &__textbox {
-            flex-basis: 0%;
-            flex-grow: 0.75;
+          flex-basis: 0;
+          flex-grow: 0.70;
         }
     }
 }
@@ -95,7 +95,6 @@ body {
 @media only screen and (max-width: 80rem) {
     .hero {
         &__textbox {
-            flex-basis: 0%;
             flex-grow: 1;
         }
     }
@@ -126,9 +125,12 @@ body {
         }
 
         &__links {
+          margin: 0 auto;
             a {
                 i {
-                    margin-top: 2rem;
+                    margin-top: 1.5rem;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
                 }
             }
         }
