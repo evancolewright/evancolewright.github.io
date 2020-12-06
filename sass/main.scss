@@ -116,6 +116,8 @@ body {
         flex-direction: column;
         width: 85%;
         text-align: center;
+        align-content: center;
+        align-items: center;
 
         &__image {
             margin: 0 auto;
