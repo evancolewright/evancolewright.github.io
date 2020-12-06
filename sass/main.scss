@@ -107,8 +107,11 @@ body {
     html {
         font-size: 55%;
     }
+
+    body {
+      max-height: 100vh;
+    }
     .hero {
-        height: 100vh;
         overflow: hidden;
         flex-direction: column;
         width: 85%;
